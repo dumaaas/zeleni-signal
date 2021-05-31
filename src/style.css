@@ -356,7 +356,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     left: -40px;
     width: 0;
     height: 0;
-    border-bottom: 21px solid #444F5D;
+    border-bottom: 21px solid rgb(25, 25, 25);
     border-left: 30px solid transparent;
 }
 
@@ -366,14 +366,28 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     position: absolute;
     bottom: 0;
     right: -40px;
-    border-bottom: 21px solid #444F5D;
+    border-bottom: 21px solid rgb(25, 25, 25);
     border-right: 30px solid transparent;
+}
+
+.bg-nameCard {
+    background: rgb(25, 25, 25, 0.90);
+}
+
+.milan-card {
+    border-bottom: 0px solid transparent !important;
 }
 
 .milan-card:hover .oblak {
     display: block;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+}
+
+.milan-card:hover .auto-zeljko {
+    display: block;
+    -webkit-animation: slideInRight 1s;
+    animation: slideInRight 1s;
 }
 
 .oblak {
@@ -399,6 +413,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     border-left: 19px solid transparent;
     border-right: 19px solid transparent;
     border-top: 35px solid white;
+}
+
+.auto-zeljko {
+    position: absolute;
+    bottom: -14px;
+    right: -20px;
+    display: none;
+    width: 200px;
+    height: 80px;
+    z-index: 100;
 }
 
 @-webkit-keyframes fadeIn {

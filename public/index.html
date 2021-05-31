@@ -7,20 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeleni Signal | Marko Dumnic</title>
     <link rel="shortcut icon" href="./images/logo-bild.ico" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
-        <div class="h-[34px] bg-[#191919] ">
+        <div class="h-[34px] bg-[#191919] wow slideInLeft" data-wow-delay="0.2s">
             <div class="mx-auto w-[1040px] flex justify-between">
-                <div class="pt-[6px]">
-                    <i class="text-[#03A04F] text-[15px] fas fa-phone-alt"></i> <p class="inline-block text-white text-[13px] font-roboto">040 214 499</p>
-                    <i class="pl-[10px] text-[#03A04F] text-[16px] fas fa-envelope"></i> <p class="inline-block text-white text-[13px] font-roboto">zelenisignal@gmail.com</p>
-                    <i class="pl-[10px] text-[#03A04F] text-[15px] fas fa-map-marker-alt"></i> <p class="inline-block text-white text-[13px] font-roboto">Bulevar 13 jul, Niksic</p>
+                <div class="pt-[6px] flex flex-row">
+                    <div class="wow fadeInDown">
+                        <i class="text-[#03A04F] text-[15px] fas fa-phone-alt"></i> 
+                        <p class="inline-block text-white text-[13px] font-roboto">
+                            040 214 499
+                        </p>
+                    </div>
+                    <div class="wow fadeInDown">
+                        <i class="pl-[10px] text-[#03A04F] text-[16px] fas fa-envelope"></i> 
+                        <p class="inline-block text-white text-[13px] font-roboto">
+                            zelenisignal@gmail.com
+                        </p>
+                    </div>
+                    <div class="wow fadeInDown">
+                        <i class="pl-[10px] text-[#03A04F] text-[15px] fas fa-map-marker-alt"></i> 
+                        <p class="inline-block text-white text-[13px] font-roboto">
+                            Bulevar 13 jul, Niksic
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <a class="cursor-pointer" href="https://www.instagram.com/autoskola_zeleni_signal/" target="_blank">
@@ -32,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="h-[100px] bg-white shadow-lg">
+        <div class="h-[100px] bg-white shadow-lg wow slideInRight" data-wow-delay="0.6s">
             <div class="mx-auto w-[1140px] flex justify-between">
                 <div class="flex flex-row pt-[10px] logo">
                     <img class="w-[87px] mt-[7px] " src="images/logo.png" alt=""></img>
@@ -75,29 +93,39 @@
             </div>
         </div>
     </header>
-    <main class="">
-        <section id="pocetna" class="w-full h-[840px] bg-center bg-cover bg-pocetna">
-            <div class="group mx-auto w-[1140px] pt-[10%]">
+    <main class="overflow-x-hidden">
+        <section id="pocetna" class="w-full h-[840px] bg-center bg-cover bg-pocetna wow fadeInUp" data-wow-delay="1.4s">
+            <div class="group mx-auto w-[1140px] pt-[10%] wow slideInLeft" data-wow-delay="1.8s">
                 <h1 class="cursor-pointer effect-shine rounded-[20px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">PRIJAVE ZA JUN SU POCELE!</h1>
                 <button class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] text-[#03A04F] rounded-[10px]">Prijavi se</button>    
             </div>
         </section>
         <section id="nas-tim" class="w-full bg-fixed bg-center bg-cover bg-nastim">
-            <div class="group mx-auto w-[1140px] pt-[100px]">
-                <h2 class="text-center text-[60px] font-bold text-[#666666]">NAS TIM</h2>
+            <div class="mx-auto w-[1140px] pt-[100px]">
+                <div class="wow slideInLeft" data-wow-delay="0.2s">
+                    <h2 class=" text-[60px] font-bold pb-[20px] ">
+                        NAS TIM
+                    </h2>
+                    <p class="pb-[60px] text-[16px] text-[#666666]">
+                        Kolektiv "Zelenog signala" čini 8 zaposlenih koji funkcionišu kao jedna homogena cjelina. Osim znanja, iskustva i profesionalizma naših zaposlenih, karakteriše ih ogromna ljubav prema poslu kojim se bave, strpljivost i volja za rad sa kandidatima. Ne smijemo zaboraviti da ovakav uspjeh dugujemo i kandidatima koji su veoma zainteresovani i marljivi. Zajedno ćemo se truditi da budemo još bolji, a zajedničkim snagama da održavamo vedar i jak tim!
+                    </p>
+                </div>
                 <div class="pb-[250px] flex flex-row flex-wrap justify-between">
                     
-                    <div class="border-[10px] border-white bg-white relative milan-card  mt-[30px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown" data-wow-delay="0.4s">
+                        <div class="transition duration-1000 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
                             <img class="w-full h-full " src="images/milan.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Milan Vujicic
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Vlasnik & Instruktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -112,17 +140,20 @@
                         </div>
                     </div>
 
-                    <div class="border-[10px] border-white bg-white relative milan-card mt-[30px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown" data-wow-delay="1s">
+                        <div class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
                             <img class="w-full h-full " src="images/dusko.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Dusko Lucic
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Izvrsni direktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -137,17 +168,20 @@
                         </div>
                     </div>
 
-                    <div class="border-[10px] border-white bg-white relative milan-card mt-[30px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown" data-wow-delay="1.6s">
+                        <div class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
                             <img class="w-full h-full " src="images/zeljko.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Zeljko Dumnic
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Instruktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -162,17 +196,20 @@
                         </div>
                     </div>
 
-                    <div class="border-[10px] border-white bg-white relative milan-card mt-[160px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px] wow fadeInDown" data-wow-delay="0.4s">
+                        <div class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
                             <img class="w-full h-full " src="images/pero.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Pero Djurdjevac
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Instruktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -186,17 +223,20 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-[10px] border-white bg-white relative milan-card mt-[160px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px] wow fadeInDown" data-wow-delay="1s">
+                        <div class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:brightness-100">
                             <img class="w-full h-full " src="images/nedjo.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Nedjo Durutovic
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Instruktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -210,17 +250,20 @@
                             </p>
                         </div>
                     </div>
-                    <div class="border-[10px] border-white  bg-white relative milan-card mt-[160px]">
-                        <div class="w-[300px] h-[356px] ">
+                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1]  bg-white relative milan-card mt-[162px] wow fadeInDown" data-wow-delay="1.6s">
+                        <div class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
                             <img class="w-full h-full " src="images/marko.png" alt=""></img>
                         </div>
-                        <div class=" py-[40px] bg-[#4E5B6B] absolute w-[380px] left-[-40px]">
-                            <h2 class="text-center font-bold text-[20px] text-[#E4E4E4]">
+                        <div class=" py-[40px] bg-nameCard absolute w-[380px] left-[-40px]">
+                            <h2 class="transition duration-700 ease-in-out group-hover:text-[#03A04F] text-center font-bold text-[20px] text-[#E4E4E4]">
                                 Marko Perovic
                             </h2>
                             <p class="text-[#7C8C9F] text-[15px] text-center">
                                 Instruktor
                             </p>
+                        </div>
+                        <div class="auto-zeljko">
+                            <img class="w-full h-full " src="images/auto-zeljko.png" alt=""></img>
                         </div>
                         <div class="triangle-bottomright">
 
@@ -234,9 +277,6 @@
                             </p>
                         </div>
                     </div>
-
-                    
-
                 </div>
             </div>
         </section>
@@ -245,7 +285,11 @@
             </div>
         </section>
     </main>
-    <script src="./js/app.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js " defer></script>
+    <script src="js/wow.min.js "></script>
+    <script src="js/app.js" defer></script>
+    <!-- End Scripts -->
 </body>
 
 </html>
