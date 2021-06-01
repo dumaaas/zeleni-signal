@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="hidden showPage">
         <div class="h-[34px] bg-[#191919] wow slideInLeft" data-wow-delay="0.2s">
             <div class="mx-auto w-[1040px] flex justify-between">
                 <div class="pt-[6px] flex flex-row">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </header>
-    <main class="overflow-x-hidden">
+    <main class="hidden overflow-x-hidden showPage">
         <section id="pocetna" class="w-full h-[840px] bg-center bg-cover bg-pocetna wow fadeInUp" data-wow-delay="1.4s">
             <div class="group mx-auto w-[1140px] pt-[10%] wow slideInLeft" data-wow-delay="1.8s">
                 <h1 class="cursor-pointer effect-shine rounded-[20px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">PRIJAVE ZA JUN SU POCELE!</h1>
@@ -285,6 +285,17 @@
             </div>
         </section>
     </main>
+    
+    <!-- Loader -->
+    <div class="w-full h-screen loader">
+        <div class="traffic-lights shape">
+            <div class="shadow"></div>
+            <div class="light red"></div>
+            <div class="light amber"></div>
+            <div class="light green"></div>
+        </div>
+    </div>
+    
     <!-- Scripts -->
     <script src="js/jquery.min.js " defer></script>
     <script src="js/wow.min.js "></script>

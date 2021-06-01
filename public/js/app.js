@@ -1,6 +1,10 @@
 //initializing new Wow object on load of window
 $(window).on('load', function() {
-    new WOW().init();
+    setTimeout(function() {
+        new WOW().init();
+        $(".loader").hide();
+        $(".showPage").fadeIn('slow');
+    }, 3800)
 });
 
 function nesto() {

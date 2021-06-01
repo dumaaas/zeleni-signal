@@ -489,6 +489,164 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
       to { opacity: 1; }
 }
 
+/* LOADER */
+
+    .loader {
+        background: #FE6860;
+    }
+    
+
+  .traffic-lights {
+    padding: 10px 50px;
+    background: #222;
+    border-radius: 35px;
+    border: 15px solid #111;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    z-index:100;
+  }
+  
+  .light {
+    border-top: 0.8em solid black;
+    border-radius: 50%;
+    background: #111;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 30px 0px 0px 30px
+  }
+  
+  @-webkit-keyframes red {
+    0% {
+      background: #111;
+    }
+    50% {
+      background: #c0392b;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  @keyframes red {
+    0% {
+      background: #111;
+    }
+    50% {
+      background: #c0392b;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  @-webkit-keyframes amber {
+    0%
+    {
+      background: #111;
+    }
+    50% {
+      background: #FBC00C;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  @keyframes amber {
+    0%
+    {
+      background: #111;
+    }
+    50% {
+      background: #FBC00C;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  @-webkit-keyframes green {
+    0% {
+      background: #111;
+    }
+    50% {
+      background: #03A04F;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  @keyframes green {
+    0% {
+      background: #111;
+    }
+    50% {
+      background: #03A04F;
+    }
+    100% {
+      background: #111;
+    }
+  }
+  
+  .red {
+    -webkit-animation: red 1.5s linear forwards;
+            animation: red 1.5s linear forwards;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  
+  .amber {
+    -webkit-animation: amber 1.5s linear forwards;
+            animation: amber 1.5s linear forwards;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+  
+  .green {
+    -webkit-animation: green 1.5s linear forwards;
+            animation: green 1.5s linear forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  
+  .traffic-lights::before {
+    content: "";
+    width: 5em;
+    height: 3em;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    z-index: 0;
+  }
+  .traffic-lights::after{
+    content: "";
+    width:150px;
+    height:20px;
+    position:absolute;
+    top:110%;
+    left:50%;
+    transform: translateX(-50%);
+    background: #111;
+    z-index: 0;
+  }
+  
+
 /* End Fonts */
 
 /* ! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */
@@ -1101,6 +1259,9 @@ body {
 .flex{
     display: flex;
 }
+.hidden{
+    display: none;
+}
 .h-\[34px\]{
     height: 34px;
 }
@@ -1118,6 +1279,9 @@ body {
 }
 .h-\[500px\]{
     height: 500px;
+}
+.h-screen{
+    height: 100vh;
 }
 .w-\[1040px\]{
     width: 1040px;
@@ -1334,8 +1498,8 @@ body {
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-xl{
-    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+.shadow{
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .filter{
