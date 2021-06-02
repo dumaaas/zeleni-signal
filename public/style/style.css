@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Roboto';
@@ -543,8 +544,6 @@ h1 span:hover {
 /*---- main road sign - rotated square ----*/
 .main_road {
     float: left;
-    /*-margin-left only for this table here-*/
-    margin-left: 20px;
     width: 45px;
     height: 45px;
     display: block;
@@ -578,6 +577,27 @@ h1 span:hover {
     position: relative;
 }
 
+.melns {
+    width: 53px;
+    position: absolute;
+    border-bottom: 2px solid #000;
+}
+
+.viens {
+    transform: rotate(90deg);
+    left: -21px;
+}
+
+.divi {
+    transform: rotate(90deg);
+    left: -16px;
+}
+
+.tris {
+    transform: rotate(90deg);
+    left: -11px;
+}
+
 .connector {
     border-right-width: 1px;
     border-right-style: dashed;
@@ -585,13 +605,12 @@ h1 span:hover {
     height: 100%;
     position: absolute;
     top: 0.5px;
-    left: 42px;
+    left: 22px;
     z-index: 1;
 }
 
 /*---- flat sign ----*/
 .sign-flat {
-    margin-left: 20px;
     display: block;
     font-family: Arial;
     text-align: center;
@@ -604,7 +623,7 @@ h1 span:hover {
 
 /*---- Basic round sign ----*/
 .sign-red {
-    margin-left: 16px;
+    margin-left: -4px;
     display: block;
     width: 52px;
     height: 52px;
@@ -634,49 +653,79 @@ h1 span:hover {
     margin-top: -2px;
 }
 
+i.fa-car-alt {
+    font-size: 24px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+/*--- no parking sign ---*/
+.blue {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #00f;
+    border-radius: 50%;
+    margin: 7px;
+    position: absolute;
+}
+
+.big-red {
+    display: block;
+    width: 40px;
+    border-bottom: 7px solid #f00;
+    transform: rotate(45deg);
+    margin-top: 15px;
+    margin-left: -2px;
+}
+
 /*---- octagon shape for stop sign ----*/
 .stopWrap {
-    margin-left: 19px;
     width: 45px;
     height: 45px;
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
 }
+
 .stop p {
-  display: inline-block;
-  position: absolute;
-  font-family: Arial;
-  font-size: 13px;
-  margin-left: 2px;
-  margin-top: 10px;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-/*-- only for this showcase,if used separately,delete the line below --*/
-  transform: rotate(45deg);
+    display: inline-block;
+    position: absolute;
+    font-family: Arial;
+    font-size: 13px;
+    margin-left: 2px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    /*-- only for this showcase,if used separately,delete the line below --*/
+    transform: rotate(45deg);
 }
+
 .stop {
     position: absolute;
     overflow: hidden;
     background: #f00;
-    top: 0; 
-    right: 0; 
-    bottom: 0; 
+    top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
     transform: rotate(-45deg);
     border: 3px solid #fff;
 }
+
 .stop:before {
     position: absolute;
-    top: -3px; 
-    right: -3px; 
-    bottom: -3px; 
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
     left: -3px;
     transform: rotate(135deg);
     content: '';
-    border: 3px solid #fff;  
+    border: 3px solid #fff;
 }
 
-
+.font-robotoCondensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 @-webkit-keyframes red {
     0% {
@@ -691,8 +740,6 @@ h1 span:hover {
         background: #111;
     }
 }
-
-
 
 @keyframes red {
     0% {
@@ -1467,8 +1514,8 @@ body {
 .w-\[380px\]{
     width: 380px;
 }
-.w-\[550px\]{
-    width: 550px;
+.w-\[452px\]{
+    width: 452px;
 }
 .max-w-\[600px\]{
     max-width: 600px;
@@ -1598,6 +1645,9 @@ body {
 .pt-\[50px\]{
     padding-top: 50px;
 }
+.pb-\[90px\]{
+    padding-bottom: 90px;
+}
 .pb-\[100px\]{
     padding-bottom: 100px;
 }
@@ -1634,6 +1684,9 @@ body {
 .text-\[14px\]{
     font-size: 14px;
 }
+.text-\[44px\]{
+    font-size: 44px;
+}
 .text-\[45px\]{
     font-size: 45px;
 }
@@ -1645,6 +1698,9 @@ body {
 }
 .leading-\[80px\]{
     line-height: 80px;
+}
+.leading-\[54px\]{
+    line-height: 54px;
 }
 .leading-\[30px\]{
     line-height: 30px;
