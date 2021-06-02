@@ -686,6 +686,51 @@ i.fa-car-alt {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.owl-nav .owl-prev {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgba(43, 43, 43, var(--tw-bg-opacity)) !important;
+    border-radius: 9999px !important;
+    height: 50px !important;
+    margin: 0px !important;
+    position: absolute !important;
+    left: 4% !important;
+    top: 45% !important;
+    --tw-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    width: 50px !important;
+}
+
+.owl-nav .owl-next {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgba(43, 43, 43, var(--tw-bg-opacity)) !important;
+    border-radius: 9999px !important;
+    height: 50px !important;
+    margin: 0px !important;
+    position: absolute !important;
+    right: 4% !important;
+    top: 45% !important;
+    --tw-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    width: 50px !important;
+}
+
+.owl-nav img {
+    width: 12px;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 44%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #03A04F !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 4px 7px !important;
+}
+
 @keyframes red {
     0% {
         background: #111;

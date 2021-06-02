@@ -6,6 +6,8 @@ $(window).on('load', function() {
     //     $(".showPage").fadeIn('slow');
     // }, 3800)
     new WOW().init();
+    $(".owl-carousel").owlCarousel();
+
     $(".loader").hide();
     $(".showPage").fadeIn('slow');
 });
@@ -30,4 +32,18 @@ $(function() {
             $triggered_times = false; // to make sure the above action triggers only once
         }
     })
+});
+
+ //slider - Section 7
+ $('.owl-carousel').owlCarousel({
+    nav: true,
+    loop: true,
+    stagePadding: 0,
+    items: 1,
+    margin:0,
+    singleItem:true,
+    smartSpeed: 1200,
+    autoplayHoverPause: true,
+    navText: ["<img src='images/nav-left.webp' class='mx-auto' loading='lazy' alt='bildstudio'>", "<img src='images/nav-right.webp' class='mx-auto' loading='lazy' alt='bildstudio'>"],
+
 });

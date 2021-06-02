@@ -741,6 +741,51 @@ i.fa-car-alt {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.owl-nav .owl-prev {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgba(43, 43, 43, var(--tw-bg-opacity)) !important;
+    border-radius: 9999px !important;
+    height: 50px !important;
+    margin: 0px !important;
+    position: absolute !important;
+    left: 4% !important;
+    top: 45% !important;
+    --tw-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    width: 50px !important;
+}
+
+.owl-nav .owl-next {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgba(43, 43, 43, var(--tw-bg-opacity)) !important;
+    border-radius: 9999px !important;
+    height: 50px !important;
+    margin: 0px !important;
+    position: absolute !important;
+    right: 4% !important;
+    top: 45% !important;
+    --tw-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+    width: 50px !important;
+}
+
+.owl-nav img {
+    width: 12px;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 44%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: #03A04F !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 4px 7px !important;
+}
+
 @-webkit-keyframes red {
     0% {
         background: #111;
@@ -1522,6 +1567,9 @@ body {
 .h-\[25px\]{
     height: 25px;
 }
+.h-\[700px\]{
+    height: 700px;
+}
 .h-screen{
     height: 100vh;
 }
@@ -1554,6 +1602,9 @@ body {
 }
 .w-\[25px\]{
     width: 25px;
+}
+.w-\[350px\]{
+    width: 350px;
 }
 .max-w-\[600px\]{
     max-width: 600px;
@@ -1603,6 +1654,12 @@ body {
 .border-\[10px\]{
     border-width: 10px;
 }
+.border-t-\[2px\]{
+    border-top-width: 2px;
+}
+.border-b-\[2px\]{
+    border-bottom-width: 2px;
+}
 .border-\[\#03A04F\]{
     --tw-border-opacity: 1;
     border-color: rgba(3, 160, 79, var(--tw-border-opacity));
@@ -1635,8 +1692,9 @@ body {
     --tw-bg-opacity: 1;
     background-color: rgba(31, 43, 56, var(--tw-bg-opacity));
 }
-.bg-opacity-20{
-    --tw-bg-opacity: 0.2;
+.bg-\[\#F0F0F0\]{
+    --tw-bg-opacity: 1;
+    background-color: rgba(240, 240, 240, var(--tw-bg-opacity));
 }
 .bg-cover{
     background-size: cover;
@@ -1688,6 +1746,10 @@ body {
 .py-\[5px\]{
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.px-\[10px\]{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .pt-\[6px\]{
     padding-top: 6px;
@@ -1749,8 +1811,14 @@ body {
 .pl-\[20px\]{
     padding-left: 20px;
 }
+.pb-\[30px\]{
+    padding-bottom: 30px;
+}
 .text-center{
     text-align: center;
+}
+.text-right{
+    text-align: right;
 }
 .text-\[15px\]{
     font-size: 15px;
@@ -1784,6 +1852,9 @@ body {
 }
 .text-\[45px\]{
     font-size: 45px;
+}
+.text-\[40px\]{
+    font-size: 40px;
 }
 .font-bold{
     font-weight: 700;
@@ -1840,6 +1911,10 @@ body {
 }
 .shadow-lg{
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-xl{
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .shadow{
