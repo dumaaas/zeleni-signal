@@ -1,6 +1,7 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 @font-face {
     font-family: 'Roboto';
@@ -278,8 +279,8 @@ h1 span:hover {
 }
 
 .bg-card {
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba(3,160,79,1) 100%, rgba(3,160,79,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 160, 79, 1) 43%, rgba(3, 160, 79, 1) 100%, rgba(3, 160, 79, 1) 100%);
 }
 
 
@@ -297,31 +298,31 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
 .active-link {
     border-radius: 5px;
     background: #F4F4F4;
-    border-top:  3px solid #03A04F;
+    border-top: 3px solid #03A04F;
 }
 
 .hover-active:hover {
     border-radius: 5px;
     background: #F4F4F4;
-    border-top:  3px solid #03A04F;
+    border-top: 3px solid #03A04F;
 }
 
 /* effect-shine */
 .effect-shine:hover {
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 1.5s infinite;
-  }
-  
-  @-webkit-keyframes shine {
+}
+
+@-webkit-keyframes shine {
     from {
-      -webkit-mask-position: 120%;
+        -webkit-mask-position: 120%;
     }
-    
+
     to {
-      -webkit-mask-position: -20%;
+        -webkit-mask-position: -20%;
     }
-  }
+}
 
 
 @keyframes rubberBand {
@@ -426,22 +427,33 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* LOADER */
 
-    .loader {
-        background: #FE6860;
-    }
-    
+.loader {
+    background: #FE6860;
+}
 
-  .traffic-lights {
+
+.traffic-lights {
     padding: 10px 50px;
     background: #222;
     border-radius: 35px;
@@ -451,19 +463,19 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
-    z-index:100;
-  }
-  
-  .light {
+    z-index: 100;
+}
+
+.light {
     border-top: 0.8em solid black;
     border-radius: 50%;
     background: #111;
     width: 100px;
     height: 100px;
     margin: 20px auto;
-  }
-  
-  .shadow {
+}
+
+.shadow {
     position: absolute;
     top: 0;
     left: 0;
@@ -471,61 +483,204 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     height: 100%;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 30px 0px 0px 30px
-  }
-  
-  @keyframes red {
+}
+
+/*---- main road sign - rotated square ----*/
+.main_road {
+    float: left;
+    /*-margin-left only for this table here-*/
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    background: #fff;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    border: 1px solid #000;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+}
+
+.inside {
+    display: block;
+    background: white;
+    width: 39px;
+    height: 39px;
+    margin: 2px;
+    border: 2px solid #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.yellow {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: yellow;
+    border: 1px solid #000;
+    margin: 7px;
+    position: relative;
+}
+
+.connector {
+    border-right-width: 1px;
+    border-right-style: dashed;
+    border-color: rgba(51, 51, 51, 0.4);
+    height: 100%;
+    position: absolute;
+    top: 0.5px;
+    left: 42px;
+    z-index: 1;
+}
+
+/*---- flat sign ----*/
+.sign-flat {
+    margin-left: 20px;
+    display: block;
+    font-family: Arial;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background: rgba(31, 58, 147, 1);
+    z-index: 20;
+}
+
+/*---- Basic round sign ----*/
+.sign-red {
+    margin-left: 16px;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #f00;
+    z-index: 20;
+}
+
+.normal {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    margin: 7px;
+}
+
+.sign-red span {
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    display: block;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    padding-left: 5px;
+    margin-top: -2px;
+}
+
+/*---- octagon shape for stop sign ----*/
+.stopWrap {
+    margin-left: 19px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;  
+}
+.stop p {
+  display: inline-block;
+  position: absolute;
+  font-family: Arial;
+  font-size: 13px;
+  margin-left: 2px;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+/*-- only for this showcase,if used separately,delete the line below --*/
+  transform: rotate(45deg);
+}
+.stop {
+    position: absolute;
+    overflow: hidden;
+    background: #f00;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    transform: rotate(-45deg);
+    border: 3px solid #fff;
+}
+.stop:before {
+    position: absolute;
+    top: -3px; 
+    right: -3px; 
+    bottom: -3px; 
+    left: -3px;
+    transform: rotate(135deg);
+    content: '';
+    border: 3px solid #fff;  
+}
+
+
+
+@keyframes red {
     0% {
-      background: #111;
+        background: #111;
     }
+
     50% {
-      background: #c0392b;
+        background: #c0392b;
     }
+
     100% {
-      background: #111;
+        background: #111;
     }
-  }
-  
-  @keyframes amber {
-    0%
-    {
-      background: #111;
-    }
-    50% {
-      background: #FBC00C;
-    }
-    100% {
-      background: #111;
-    }
-  }
-  
-  @keyframes green {
+}
+
+@keyframes amber {
     0% {
-      background: #111;
+        background: #111;
     }
+
     50% {
-      background: #03A04F;
+        background: #FBC00C;
     }
+
     100% {
-      background: #111;
+        background: #111;
     }
-  }
-  
-  .red {
+}
+
+@keyframes green {
+    0% {
+        background: #111;
+    }
+
+    50% {
+        background: #03A04F;
+    }
+
+    100% {
+        background: #111;
+    }
+}
+
+.red {
     animation: red 1.5s linear forwards;
     animation-delay: 0.5s;
-  }
-  
-  .amber {
+}
+
+.amber {
     animation: amber 1.5s linear forwards;
     animation-delay: 1.5s;
-  }
-  
-  .green {
+}
+
+.green {
     animation: green 1.5s linear forwards;
     animation-delay: 3s;
-  }
-  
-  .traffic-lights::before {
+}
+
+.traffic-lights::before {
     content: "";
     width: 5em;
     height: 3em;
@@ -535,19 +690,20 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,160,79,1) 43%, rgba
     transform: translateX(-50%);
     background: #111;
     z-index: 0;
-  }
-  .traffic-lights::after{
+}
+
+.traffic-lights::after {
     content: "";
-    width:150px;
-    height:20px;
-    position:absolute;
-    top:110%;
-    left:50%;
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
     transform: translateX(-50%);
     background: #111;
     z-index: 0;
-  }
-  
+}
+
 
 /* End Fonts */
 
