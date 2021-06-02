@@ -279,6 +279,20 @@ h1 span:hover {
     background-image: url('../images/nastim.png');
 }
 
+.bg-vozacka {
+    background-image: url('../images/vozacka.jpg');
+}
+
+.bg-results {
+    background-image: url('../images/results.jpg');
+    z-index: 10;
+}
+
+.bg-results-layer {
+    background-color: rgb(46,46,46, 0.85);
+    z-index: 20;
+}
+
 .bg-card {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(3, 160, 79, 1) 43%, rgba(3, 160, 79, 1) 100%, rgba(3, 160, 79, 1) 100%);
