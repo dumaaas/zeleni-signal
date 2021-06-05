@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: { //custom colors
         gradient: {
-          'about': ['white 65%', '#2F2F2F 65%'],
+          'about': ['white 1240px', '#2F2F2F 1240px'],
           'cover': ['#2F2F2F 65%', 'white 65%'],
         }
       }
