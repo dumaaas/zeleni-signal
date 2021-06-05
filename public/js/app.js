@@ -34,6 +34,7 @@ $(function() {
     })
 });
 
+
  //slider - Section 7
  $('.owl-carousel').owlCarousel({
     nav: true,

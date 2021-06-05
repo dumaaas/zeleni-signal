@@ -871,21 +871,21 @@
             
                     <div class="w-[820px] mx-auto relative item">
                         <div class="h-full">
-                            <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row wow slideInLeft" data-wow-delay="2s">
+                            <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row wow slideInLeft" data-wow-delay="1s">
                                 <img class="" src="images/apostrof.png" alt="">
                                 <img class="ml-[10px]" src="images/apostrof.png" alt="">
                             </div>
                             <div class="text-center">
                                 <p
-                                    class="font-merienda py-[30px] px-[65px] text-[21px] text-white leading-[45px]  wow fadeIn" data-wow-delay="0.5s">
+                                    class="font-merienda py-[30px] px-[65px] text-[21px] text-white leading-[45px]">
                                     Lorem ipsum dolor sit amet consectetur mhm elit. Est eos eum, vero
                                     exercitationem, harum error provident facere veniam at minima nemo, cupiditate
                                     libero velit quibusdam deserunt. Temporibus impedit consequuntur labore!
                                 </p>
-                                <h4 class=" text-[24px] text-white  wow fadeIn" data-wow-delay="1.2s">
+                                <h4 class=" text-[24px] text-white">
                                     John Doe
                                 </h4>
-                                <span class=" wow fadeIn" data-wow-delay="1.9s">
+                                <span>
                                     <i class="text-[#03A04F] fas fa-star"></i>
                                     <i class="text-[#03A04F] fas fa-star"></i>
                                     <i class="text-[#03A04F] fas fa-star"></i>
@@ -954,7 +954,7 @@
         <section id="kontakt" class="w-full">
             <div class="mx-auto w-[1140px] py-[100px]">
                 <div class="flex flex-row ">
-                    <div class="flex flex-col w-[590px]">
+                    <form action="https://formspree.io/f/xeqvgwad" method="POST" class="flex flex-col w-[590px]">
                         <div>
                             <h2 class=" text-[60px] font-bold  font-robotoCondensed">
                                 KONTAKTIRAJ NAS
@@ -965,28 +965,28 @@
                         </div>
                         <div class="pb-[25px]">
                             <label class="text-[#666666]">Ime i prezime <span class="text-red-500">*</span></label>
-                            <input type="text" class="w-full border-[1px] py-[5px]">
+                            <input required type="text" class="w-full border-[1px] py-[5px]">
                         </div>
                         <div class="pb-[25px]">
                             <label class="text-[#666666]">Email<span class="text-red-500">*</span></label>
-                            <input type="text" class="w-full border-[1px] py-[5px]">
+                            <input required type="email" name="_replyto" class="w-full border-[1px] py-[5px]">
                         </div>
                         <div class="pb-[25px]">
                             <label class="text-[#666666]">Telefon <span class="text-red-500">*</span></label>
-                            <input type="text" class="w-full border-[1px] py-[5px]">
+                            <input required type="text" class="w-full border-[1px] py-[5px]">
                         </div>
                         <div>
                             <label class="text-[#666666]">Poruka <span class="text-red-500">*</span></label>
-                            <textarea cols="40" rows="10" aria-invalid="false"
+                            <textarea required cols="40" rows="10"  name="message" aria-invalid="false"
                                 class="w-full border-[1px] py-[5px]"></textarea>
                         </div>
                         <div class="pb-[25px]">
-                            <button
+                            <button id="contact" 
                                 class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] text-[#03A04F] rounded-[10px]">
                                 Posalji
                             </button>
                         </div>
-                    </div>
+                    </form>
                     <div class="pt-[40px] pl-[80px] flex flex-col">
                         <div class="text-[#666666] pb-[40px]">
                             <div class="flex flex-row">
