@@ -316,16 +316,82 @@ h1 span:hover {
 }
 
 .active-link {
-    border-radius: 5px;
-    background: #F4F4F4;
-    border-top: 3px solid #03A04F;
+    position: relative;
+    color: #047857;
+    width: 0px;
+    transition: width .3s;
+
+}
+
+.active-link::after {
+    content: "";
+    position: absolute;
+    background: #6EE7B7;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 8px;
+    left: 0px;
+    width: 100%;
+    top: 7px;
+    z-index: -1;
+    transition: width .3s;
+    
+}
+
+.hover-active {
+    position: relative;
 }
 
 .hover-active:hover {
-    border-radius: 5px;
-    background: #F4F4F4;
-    border-top: 3px solid #03A04F;
+    color: #047857;
+    transition: ease .3s;
 }
+
+.hover-active::before {
+    content: "";
+    position: absolute;
+    background: #6EE7B7;
+    height: 8px;
+    left: 0px;
+    width: 0;
+    top: 7px;
+    z-index: -1;
+    transition: width .3s;
+
+}
+
+.hover-active:hover::before {
+    width: 100%;
+    transition: width .3s;
+    content: '';
+}
+
+/* Back to the top btn style */
+
+.top-btn {
+    --tw-bg-opacity: 1;
+    background-color: #03A04F;
+    border-radius: 9999px;
+    display: none;
+    height: 35px;
+    font-size: 20px;
+    opacity: 0;
+    position: fixed;
+    right: 0.875rem;
+    bottom: 0.875rem;
+    text-align: center;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    width: 35px;
+    z-index: 10;
+  }
+  
+  .top-btn.show {
+    display: block;
+    opacity: 1;
+  }
+  
+
 
 /* effect-shine */
 .effect-shine:hover {
@@ -517,7 +583,7 @@ h1 span:hover {
     border: 1px solid #000;
     overflow: hidden;
     position: relative;
-    z-index: 20;
+    z-index: 10;
 }
 
 .inside {
@@ -926,8 +992,12 @@ canvas {
     }
 }
 
-.nemaTe {
-    display: none !important;
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all ease 0.5s;
 }
 
 /* End Fonts */

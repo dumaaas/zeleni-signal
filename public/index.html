@@ -55,42 +55,52 @@
                 </div>
             </div>
         </div>
-        <div class="h-[100px] bg-white shadow-lg wow slideInRight" data-wow-delay="0.6s">
+        <div id="header" class="z-10 h-[86px] bg-white shadow-lg wow slideInRight" data-wow-delay="0.6s">
             <div class="mx-auto w-[1140px] flex justify-between">
                 <div class="flex flex-row pt-[10px] logo">
-                    <img class="w-[87px] mt-[7px] " src="images/logo.png" alt=""></img>
-                    <p class="ml-[10px] mt-[29px] text-[#4A4949] font-bold text-[20px]">Zeleni Signal | Niksic</p>
+                    <img class="w-[87px] mt-[1px] " src="images/logo.png" alt=""></img>
+                    <p class="ml-[10px] mt-[20px] text-[#4A4949] font-bold text-[20px]">Zeleni Signal | Niksic</p>
                 </div>
                 <div class="menu">
-                    <ul class="flex justify-end flex-1 mt-[32px] text-[#666666] font-semibold text-[13px]">
-                        <li class="mx-[15px] p-[10px] active-link">
-                            <a class="cursor-pointer">
+                    <ul id="header-menu" class="flex justify-between mt-[32px] text-[#666666] font-semibold text-[13px]">
+                        <li class="mt-[2px] pr-[15px]">
+                            <a class="cursor-pointer hover-active active-link" href="#pocetna">
                                 NASLOVNA
                             </a>
                         </li>
-                        <li class="mx-[15px] p-[10px] hover-active">
-                            <a class="cursor-pointer">
+                        <li class="mt-[2px] pr-[15px]" >
+                            <a class="cursor-pointer hover-active" href="#about">
                                 O NAMA
                             </a>
                         </li>
-                        <li class="mx-[15px] p-[10px] hover-active">
-                            <a class="cursor-pointer">
+                        <li class="mt-[2px] pr-[15px]" >
+                            <a class="cursor-pointer hover-active" href="#nas-tim">
                                 NAS TIM
                             </a>
                         </li>
-                        <li class="mx-[15px] p-[10px] hover-active">
-                            <a class="cursor-pointer">
-                                NAS VOZNI PARK
+                        <li class="mt-[2px] pr-[15px]" >
+                            <a class="cursor-pointer hover-active" href="#vozni-park">
+                                VOZILA
                             </a>
                         </li>
-                        <li class="mx-[15px] p-[10px] hover-active">
-                            <a class="cursor-pointer">
+                        <li class="mt-[2px] pr-[15px]" >
+                            <a class="cursor-pointer hover-active" href="#obuka">
+                                OBUKA
+                            </a>
+                        </li>
+                        <li class="mt-[2px] pr-[15px]" >
+                            <a class="cursor-pointer hover-active" href="#cjenovnik">
                                 CJENOVNIK
                             </a>
                         </li>
-                        <li class="mx-[15px] p-[10px] hover-active">
-                            <a class="cursor-pointer">
+                        <li class="mt-[2px] pr-[15px]">
+                            <a class="cursor-pointer hover-active" href="#vase-rijeci">
                                 VI KAZETE
+                            </a>
+                        </li>
+                        <li class="mt-[2px] pr-[15px]">
+                            <a class="cursor-pointer hover-active" href="#kontakt">
+                                KONTAKT
                             </a>
                         </li>
                     </ul>
@@ -100,17 +110,19 @@
     </header>
     <main class="hidden overflow-x-hidden overflow-y-hidden showPage">
         <section id="pocetna" class="w-full h-[840px] bg-center bg-cover bg-pocetna wow fadeInUp" data-wow-delay="1.4s">
-            <div class="group mx-auto w-[1140px] pt-[10%] wow slideInLeft" data-wow-delay="1.8s">
-                <h1
-                    class="font-robotoCondensed cursor-pointer effect-shine rounded-[20px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">
-                    PRIJAVE ZA JUL SU POCELE!</h1>
-                <button
-                    class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] text-[#03A04F] rounded-[10px]">
-                    Prijavi se
-                </button>
+            <div class="bg-results-layer h-[840px]">
+                <div class="group mx-auto w-[1140px] pt-[10%] wow slideInLeft" data-wow-delay="1.8s">
+                    <h1
+                        class="font-robotoCondensed cursor-pointer effect-shine rounded-[20px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">
+                        PRIJAVE ZA JUL SU POCELE!</h1>
+                    <button
+                        class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] text-[#03A04F] rounded-[10px]">
+                        Prijavi se
+                    </button>
+                </div>
             </div>
         </section>
-        <section id="o-nama"
+        <section id="about"
             class="w-full bg-fixed bg-center bg-contain bg-gradient-to-r from-gradient-about-0 to-gradient-about-1 ">
             <div class="mx-auto w-[1140px] py-[100px]">
                 <div class="flex flex-row justify-between">
@@ -463,291 +475,293 @@
             </div>
         </section>
 
-        <section id="vozacka" class="w-full bg-fixed bg-white bg-center bg-contain bg-vozacka">
-            <div class="mx-auto w-[1140px] pt-[100px]">
-                <div class="pb-[90px] font-robotoCondensed wow fadeInDown" data-wow-delay="0.2s">
-                    <h2 class=" text-[60px] font-bold  text-[#03A04F]">
-                        PUT DO VOZACKE?
-                    </h2>
-                    <p class="text-[44px] font-bold text-[#666666] leading-[54px]">
-                        Kako izgleda obuka za B? Provozaj se sa nama :)
-                    </p>
+        <section id="obuka">
+            <section id="vozacka" class="w-full bg-fixed bg-white bg-center bg-contain bg-vozacka">
+                <div class="mx-auto w-[1140px] pt-[100px]">
+                    <div class="pb-[90px] font-robotoCondensed wow fadeInDown" data-wow-delay="0.2s">
+                        <h2 class=" text-[60px] font-bold  text-[#03A04F]">
+                            PUT DO VOZACKE?
+                        </h2>
+                        <p class="text-[44px] font-bold text-[#666666] leading-[54px]">
+                            Kako izgleda obuka za B? Provozaj se sa nama :)
+                        </p>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <ul class="pb-[100px] wow slideInLeft" data-wow-delay="0.5s">
+                            <li class="relative pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="main_road">
+                                        <div class="inside">
+                                            <div class="yellow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[35px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            1. Prvo krenes glavnim putem i upises se! :)
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Zelis brzo da se upises i pocnes da vozis? Dodji kod naseg Duska da popijete
+                                            kafu i da ti sve zavrsi za cas.
+                                        </p>
+                                        <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                        <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[10px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="sign-flat">
+                                        <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
+                                            H
+                                        </p>
+                                    </div>
+                                    <div class="pl-[35px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            2. Ljekarsko uverenje i prva pomoć
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[10px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="sign-red">
+                                        <div class="normal">
+                                            <span>50</span>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[32px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            3. Uspori! Prvo moras da naucis teoriju. :)
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                        <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[10px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="stopWrap">
+                                        <div class="stop">
+                                            <p>STOP</p>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[32px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            4. Zaustavi se, primjeni steceno znanje i polozi ispit! :)
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Naši kandidati u proseku za 10 minuta završavaju teorijski ispit.
+    
+                                            Naši učenici imaju 97% šanse da polože teorijski ispit iz prvog pokušaja.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="pb-[100px] pl-[20px] wow slideInRight" data-wow-delay="0.5s">
+                            <li class="relative pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="sign-red">
+                                        <div class="normal">
+                                            <i class="fa fa-car-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[35px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            5. E sad je vrijeme da vozimo!
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Krećeš sa instruktorom na časove.
+    
+                                            Zaposleni instruktori su profesionalci, sa pojedinačnim iskustvom od preko 25
+                                            godina u ovoj oblasti će na zanimljiv način preneti znanje kandidatima i naučiti
+                                            ih da voze.
+                                        </p>
+    
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[10px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="sign-red">
+                                        <div class="blue">
+                                            <div class="big-red">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[35px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            6. Sad nema stajanja! Ma, polazes ti to :)
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Ispit se sastoji iz dva dela.
+    
+                                            Prvo se polažu poligonske radnje zatim vožnja po gradu.
+    
+                                            To sve vremenski traje oko 45 minuta.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[10px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <!-- <div class="sign-flat">
+                                        <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
+                                            P
+                                        </p>
+                                    </div> -->
+                                    <div class="z-20 w-[45px] bg-[#323E4E] h-[95px] py-[5px] rounded-[50px]">
+                                        <div class="mx-auto rounded-[50%] bg-[#C0392B] w-[25px] h-[25px] ">
+    
+                                        </div>
+                                        <div class="mx-auto rounded-[50%] bg-[#1F2B38] w-[25px] h-[25px] mt-[5px]">
+    
+                                        </div>
+                                        <div class="mx-auto rounded-[50%] bg-[#1F2B38] w-[25px] h-[25px] mt-[5px]">
+    
+                                        </div>
+                                    </div>
+                                    <div class="pl-[32px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            7. Dok cekas <span class="text-[#03A04F]">zeleni signal</span>, skokni po
+                                            svjedocanstvo
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
+                                            toga
+                                            naučimo sve.
+                                        </p>
+                                        <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
+                                            Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
+                                            toga
+                                            naučimo sve.
+                                        </p>
+                                        <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
+                                            Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
+                                            toga
+                                            naučimo sve.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="connector">
+    
+                                </div>
+                            </li>
+                            <li class="relative mt-[20px] pb-[20px]">
+                                <div class="flex flex-row">
+                                    <div class="main_road">
+                                        <div class="inside">
+                                            <div class="yellow">
+                                                <div class="melns viens"></div>
+                                                <div class="melns divi"></div>
+                                                <div class="melns tris"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pl-[32px] w-[500px]">
+                                        <h3
+                                            class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
+                                            8. Kraj puta. Srecna vozacka!
+                                        </h3>
+                                        <p class="text-[#666666] leading-[26px] text-[14px]">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
+                                            quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
+                                            reiciendis exercitationem modi veritatis nemo fuga quisquam.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="flex flex-row justify-between">
-                    <ul class="pb-[100px] wow slideInLeft" data-wow-delay="0.5s">
-                        <li class="relative pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="main_road">
-                                    <div class="inside">
-                                        <div class="yellow">
-                                        </div>
-                                    </div>
+            </section>
+    
+            <section id="results" class="bg-center bg-cover results-counter bg-results">
+                <div class="bg-results-layer">
+                    <div class="mx-auto w-[1140px]">
+                        <div class="flex flex-row justify-between py-[200px]">
+                            <div class="flex flex-col justify-between">
+                                <i class="text-[50px] text-[#03A04F] text-center fas fa-users"></i>
+                                <p
+                                    class="count pt-[30px] text-[32px] text-white font-bold font-robotoCondensed text-center">
+                                    5</p>
+                                <span class="pt-[10px] text-white font-bold text-center">INSTRUKTORA</span>
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <i class="text-[50px] text-[#03A04F] text-center fas fa-car"></i>
+                                <div
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    <p class="count">97</p>
+                                    <p class="">%</p>
                                 </div>
-                                <div class="pl-[35px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        1. Prvo krenes glavnim putem i upises se! :)
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Zelis brzo da se upises i pocnes da vozis? Dodji kod naseg Duska da popijete
-                                        kafu i da ti sve zavrsi za cas.
-                                    </p>
-                                    <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
-                                    <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
+                                <span class="pt-[10px] text-white font-bold text-center">PROLAZNOST</span>
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <i class="text-[50px] text-[#03A04F] text-center fas fa-user"></i>
+                                <div
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    <p class="count">40000</p>
+                                    <p class="">+</p>
                                 </div>
+                                <span class="pt-[10px] text-white font-bold text-center">KANDIDATA</span>
                             </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[10px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="sign-flat">
-                                    <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
-                                        H
-                                    </p>
+                            <div class="flex flex-col justify-between">
+                                <i class="text-[50px] text-[#03A04F] text-center fas fa-coffee"></i>
+                                <div
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    <p class="count">5000</p>
+                                    <p class="">+</p>
                                 </div>
-                                <div class="pl-[35px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        2. Ljekarsko uverenje i prva pomoć
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
-                                </div>
+                                <span class="pt-[10px] text-white font-bold text-center">SOLJA KAFE</span>
                             </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[10px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="sign-red">
-                                    <div class="normal">
-                                        <span>50</span>
-                                    </div>
-                                </div>
-                                <div class="pl-[32px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        3. Uspori! Prvo moras da naucis teoriju. :)
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
-                                    <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[10px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="stopWrap">
-                                    <div class="stop">
-                                        <p>STOP</p>
-                                    </div>
-                                </div>
-                                <div class="pl-[32px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        4. Zaustavi se, primjeni steceno znanje i polozi ispit! :)
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Naši kandidati u proseku za 10 minuta završavaju teorijski ispit.
-
-                                        Naši učenici imaju 97% šanse da polože teorijski ispit iz prvog pokušaja.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="pb-[100px] pl-[20px] wow slideInRight" data-wow-delay="0.5s">
-                        <li class="relative pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="sign-red">
-                                    <div class="normal">
-                                        <i class="fa fa-car-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="pl-[35px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        5. E sad je vrijeme da vozimo!
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Krećeš sa instruktorom na časove.
-
-                                        Zaposleni instruktori su profesionalci, sa pojedinačnim iskustvom od preko 25
-                                        godina u ovoj oblasti će na zanimljiv način preneti znanje kandidatima i naučiti
-                                        ih da voze.
-                                    </p>
-
-                                </div>
-                            </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[10px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="sign-red">
-                                    <div class="blue">
-                                        <div class="big-red">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pl-[35px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        6. Sad nema stajanja! Ma, polazes ti to :)
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Ispit se sastoji iz dva dela.
-
-                                        Prvo se polažu poligonske radnje zatim vožnja po gradu.
-
-                                        To sve vremenski traje oko 45 minuta.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[10px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <!-- <div class="sign-flat">
-                                    <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
-                                        P
-                                    </p>
-                                </div> -->
-                                <div class="z-20 w-[45px] bg-[#323E4E] h-[95px] py-[5px] rounded-[50px]">
-                                    <div class="mx-auto rounded-[50%] bg-[#C0392B] w-[25px] h-[25px] ">
-
-                                    </div>
-                                    <div class="mx-auto rounded-[50%] bg-[#1F2B38] w-[25px] h-[25px] mt-[5px]">
-
-                                    </div>
-                                    <div class="mx-auto rounded-[50%] bg-[#1F2B38] w-[25px] h-[25px] mt-[5px]">
-
-                                    </div>
-                                </div>
-                                <div class="pl-[32px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        7. Dok cekas <span class="text-[#03A04F]">zeleni signal</span>, skokni po
-                                        svjedocanstvo
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
-                                        toga
-                                        naučimo sve.
-                                    </p>
-                                    <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
-                                        Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
-                                        toga
-                                        naučimo sve.
-                                    </p>
-                                    <p class="text-[#666666] leading-[26px] text-[14px] pt-[10px]">
-                                        Na našoj teorijskoj obuci nije nimalo dosadno. Zabavljamo se, zezamo se i pored
-                                        toga
-                                        naučimo sve.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="connector">
-
-                            </div>
-                        </li>
-                        <li class="relative mt-[20px] pb-[20px]">
-                            <div class="flex flex-row">
-                                <div class="main_road">
-                                    <div class="inside">
-                                        <div class="yellow">
-                                            <div class="melns viens"></div>
-                                            <div class="melns divi"></div>
-                                            <div class="melns tris"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="pl-[32px] w-[500px]">
-                                    <h3
-                                        class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
-                                        8. Kraj puta. Srecna vozacka!
-                                    </h3>
-                                    <p class="text-[#666666] leading-[26px] text-[14px]">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat facere,
-                                        quas cupiditate nisi, sit quasi expedita commodi quo omnis nihil! Eos vel
-                                        reiciendis exercitationem modi veritatis nemo fuga quisquam.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="results" class="bg-center bg-cover results-counter bg-results">
-            <div class="bg-results-layer">
-                <div class="mx-auto w-[1140px]">
-                    <div class="flex flex-row justify-between py-[200px]">
-                        <div class="flex flex-col justify-between">
-                            <i class="text-[50px] text-[#03A04F] text-center fas fa-users"></i>
-                            <p
-                                class="count pt-[30px] text-[32px] text-white font-bold font-robotoCondensed text-center">
-                                5</p>
-                            <span class="pt-[10px] text-white font-bold text-center">INSTRUKTORA</span>
-                        </div>
-                        <div class="flex flex-col justify-between">
-                            <i class="text-[50px] text-[#03A04F] text-center fas fa-car"></i>
-                            <div
-                                class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
-                                <p class="count">97</p>
-                                <p class="">%</p>
-                            </div>
-                            <span class="pt-[10px] text-white font-bold text-center">PROLAZNOST</span>
-                        </div>
-                        <div class="flex flex-col justify-between">
-                            <i class="text-[50px] text-[#03A04F] text-center fas fa-user"></i>
-                            <div
-                                class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
-                                <p class="count">40000</p>
-                                <p class="">+</p>
-                            </div>
-                            <span class="pt-[10px] text-white font-bold text-center">KANDIDATA</span>
-                        </div>
-                        <div class="flex flex-col justify-between">
-                            <i class="text-[50px] text-[#03A04F] text-center fas fa-coffee"></i>
-                            <div
-                                class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
-                                <p class="count">5000</p>
-                                <p class="">+</p>
-                            </div>
-                            <span class="pt-[10px] text-white font-bold text-center">SOLJA KAFE</span>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
 
         <section id="cjenovnik" class="w-full bg-[#EEEEEE]">
@@ -1120,6 +1134,10 @@
                 Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to top button -->
+    <a id="top-btn" class="top-btn hover:bg-green-800 hover:cursor-pointer">&#x2191;</a>
+    <!-- End of back to top button -->
 
     <!-- Loader -->
     <div class="w-full h-screen loader">
