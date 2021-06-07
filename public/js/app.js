@@ -10,7 +10,7 @@ $(window).on('load', function () {
 
     $(".loader").hide();
     $(".showPage").fadeIn('slow');
-
+    
     //to avoid exepction on Lighthouse report for passive listeners
     jQuery.event.special.touchstart = {
         setup: function (_, ns, handle) {
