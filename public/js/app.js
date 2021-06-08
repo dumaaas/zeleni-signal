@@ -114,6 +114,8 @@ $('.owl-carousel').owlCarousel({
     navText: ["<img src='images/nav-left.webp' class='mx-auto' loading='lazy' alt='bildstudio'>", "<img src='images/nav-right.webp' class='mx-auto' loading='lazy' alt='bildstudio'>"],
 
 });
+var body = document.body;
+
 
 
 function hamburger() {
@@ -129,6 +131,7 @@ function openMenu() {
     document.getElementById("bar1").classList.add('bar1');
     document.getElementById("bar2").classList.add('bar2');
     document.getElementById("bar3").classList.add('bar3');
+    document.getElementById("menu").classList.add('menu-open');
     document.getElementById("hamburger-btn").classList.add("hamburger-btn-close");
 }
 
@@ -136,5 +139,6 @@ function closeMenu() {
     document.getElementById("bar1").classList.remove('bar1');
     document.getElementById("bar2").classList.remove('bar2');
     document.getElementById("bar3").classList.remove('bar3');
+    document.getElementById("menu").classList.remove('menu-open');
     document.getElementById("hamburger-btn").classList.remove("hamburger-btn-close");
 }

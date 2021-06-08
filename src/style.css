@@ -335,7 +335,6 @@ h1 span:hover {
     top: 7px;
     z-index: -1;
     transition: width .3s;
-    
 }
 
 .hover-active {
@@ -384,13 +383,13 @@ h1 span:hover {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
     width: 35px;
     z-index: 10;
-  }
-  
-  .top-btn.show {
+}
+
+.top-btn.show {
     display: block;
     opacity: 1;
-  }
-  
+}
+
 
 
 /* effect-shine */
@@ -503,6 +502,22 @@ h1 span:hover {
     border-right: 19px solid transparent;
     border-top: 35px solid white;
 }
+
+.kafa-dusko {
+    position: absolute;
+    bottom: -14px;
+    right: -5px;
+    display: none;
+    width: 110px;
+    z-index: 100;
+}
+
+.milan-card:hover .kafa-dusko {
+    display: block;
+    -webkit-animation: fadeInUp 1s;
+    animation: fadeInUp 1s;
+}
+
 
 .auto-zeljko {
     position: absolute;
@@ -717,6 +732,7 @@ i.fa-car-alt {
     height: 45px;
     position: relative;
     overflow: hidden;
+    z-index: 20;
 }
 
 .stop p {
@@ -1007,13 +1023,13 @@ canvas {
     position: absolute;
     top: 40%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     width: 34px;
     height: 34px;
     border-radius: 50%;
     background-color: #03A04F;
     -webkit-animation: scaleCircle 0.5s forwards;
-            animation: scaleCircle 0.5s forwards;
+    animation: scaleCircle 0.5s forwards;
     transition: 0.5s transform;
     transition: 0.5s transform;
 }
@@ -1021,22 +1037,24 @@ canvas {
 @-webkit-keyframes scaleCircle {
     from {
         display: none;
-        transform: translate(-50%,-50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
     }
+
     to {
         display: block;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
 @keyframes scaleCircle {
     from {
         display: none;
-        transform: translate(-50%,-50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
     }
+
     to {
         display: block;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
@@ -1066,6 +1084,20 @@ canvas {
 
 .bar3 {
     transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -1, -8);
+}
+
+.menu-closed {
+    right: -321px;
+    transition: right .5 ease;
+}
+
+.menu-open {
+    right: 0;
+    transition: right .5 ease;
+}
+
+#menu {
+    transition: right .5s ease;
 }
 
 /* End Fonts */
