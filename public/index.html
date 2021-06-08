@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeleni Signal | Marko Dumnic</title>
-    <link rel="shortcut icon" href="./images/logo-bild.ico" type="image/vnd.microsoft.icon">
+    <title>Zeleni Signal | Niksic</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/vnd.microsoft.icon">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style/style.css">
@@ -19,9 +19,10 @@
 </head>
 
 <body>
+
     <header class="hidden showPage">
         <div class="h-[34px] bg-[#191919] wow slideInLeft" data-wow-delay="0.2s">
-            <div class="mx-auto max-w-[1040px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] flex justify-between">
+            <div class="px-[20px] mx-auto max-w-[1040px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] flex justify-between">
                 <div class="pt-[6px] flex flex-row">
                     <div class="wow fadeInDown">
                         <i class="text-[#03A04F] text-[15px] fas fa-phone-alt"></i>
@@ -29,13 +30,13 @@
                             040 214 499
                         </p>
                     </div>
-                    <div class="wow fadeInDown">
+                    <div class="wow fadeInDown mobile:hidden">
                         <i class="pl-[10px] text-[#03A04F] text-[16px] fas fa-envelope"></i>
                         <p class="inline-block text-white text-[13px] font-roboto">
                             zelenisignal@gmail.com
                         </p>
                     </div>
-                    <div class="wow fadeInDown">
+                    <div class="wow fadeInDown tablet:hidden">
                         <i class="pl-[10px] text-[#03A04F] text-[15px] fas fa-map-marker-alt"></i>
                         <p class="inline-block text-white text-[13px] font-roboto">
                             Vuka Micunovica 17, Niksic
@@ -56,12 +57,12 @@
             </div>
         </div>
         <div id="header" class="z-10 h-[86px] bg-white shadow-lg wow slideInRight" data-wow-delay="0.6s">
-            <div class="mx-auto max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] flex justify-between">
+            <div class="px-[20px] mx-auto max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] flex justify-between">
                 <div class="flex flex-row pt-[10px] logo">
                     <img class="w-[87px] mt-[1px] " src="images/logo.png" alt=""></img>
-                    <p class="ml-[10px] mt-[20px] text-[#4A4949] font-bold text-[20px]">Zeleni Signal | Niksic</p>
+                    <p class="ml-[10px] mt-[20px] text-[#4A4949] font-bold text-[20px]">Zeleni Signal <span class="mobile:hidden">| Niksic</span></p>
                 </div>
-                <div class="menu">
+                <div class="menu small:hidden">
                     <ul id="header-menu" class="flex justify-between mt-[32px] text-[#666666] font-semibold text-[13px]">
                         <li class="mt-[2px] pr-[15px]">
                             <a class="cursor-pointer hover-active active-link" href="#pocetna">
@@ -105,32 +106,49 @@
                         </li>
                     </ul>
                 </div>
+                <div class="mt-[32px] big:hidden">
+                    <a id="hamburger-btn" class="relative block cursor-pointer hamburger-btn" onclick="hamburger()">
+                        <span id="bar1" class="hamburger-bar relative z-20 block h-[2px] bg-black my-[5px] mx-0 w-[24px]">
+        
+                        </span>
+                        <span id="bar2"
+                            class="hamburger-bar hamburger-bar2 relative z-20 block h-[2px] bg-black my-[5px] mx-0 w-[24px]">
+        
+                        </span>
+                        <span id="bar3" class="hamburger-bar relative z-20 block h-[2px] bg-black my-[5px] mx-0 w-[24px]">
+        
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+
     <main class="hidden overflow-x-hidden overflow-y-hidden showPage">
-        <section id="pocetna" class="max-w-full h-[840px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] bg-center bg-cover bg-pocetna wow fadeInUp" data-wow-delay="1.4s">
-            <div class="bg-results-layer h-[840px]">
-                <div class="group mx-auto w-[1140px] pt-[10%] wow slideInLeft" data-wow-delay="1.8s">
+        
+        <section id="pocetna" class="w-full h-[840px] small:h-[600px] bg-center bg-cover bg-pocetna wow fadeInUp" data-wow-delay="1.4s">
+            <div class="bg-results-layer h-[840px] small:h-[600px] w-full">
+                <div class="px-[20px] group mx-auto max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] pt-[100px] wow slideInLeft" data-wow-delay="1.8s">
                     <h1
-                        class="font-robotoCondensed cursor-pointer effect-shine rounded-[20px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">
+                        class="font-robotoCondensed cursor-pointer effect-shine rounded-[20px] small:text-[62px] small:leading-[62px] text-[80px] max-w-[600px] text-black font-bold leading-[80px] tracking-tight">
                         PRIJAVE ZA JUL SU POCELE!</h1>
                     <button
-                        class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] text-[#03A04F] rounded-[10px]">
+                        class="button-transition mt-[20px] border-[#03A04F] border-[1px] px-[20px] py-[10px] small:px-[15px] small:py-[7px] text-[#03A04F] rounded-[10px]">
                         Prijavi se
                     </button>
                 </div>
             </div>
         </section>
+
         <section id="about"
-            class="w-full bg-fixed bg-center bg-contain bg-gradient-to-r from-gradient-about-0 to-gradient-about-1 ">
-            <div class="mx-auto w-[1140px] py-[100px]">
-                <div class="flex flex-row justify-between">
-                    <div class="w-[700px] pr-[50px] wow slideInLeft" data-wow-delay="0.2s">
-                        <h2 class=" text-[60px] font-bold pb-[40px] font-robotoCondensed">
+            class="w-full bg-fixed bg-center bg-contain big:bg-gradient-to-r big:from-gradient-about-0 big:to-gradient-about-1 small:bg-white">
+            <div class="mx-auto max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
+                <div class="flex flex-row justify-between small:flex-wrap">
+                    <div class="w-[700px] pr-[50px] small:pr-0 wow slideInLeft" data-wow-delay="0.2s">
+                        <h2 class="small:text-center text-[60px] font-bold pb-[40px] font-robotoCondensed">
                             O NAMA
                         </h2>
-                        <p class="pb-[20px] text-[16px] text-[#666666]">
+                        <p class="small:text-center pb-[20px] text-[16px] text-[#666666]">
                             Auto-škola "Zeleni signal" postoji od 1992.godine i prva je privatna auto-škola u Crnoj Gori
                             što je ujedno čini i najstarijom. Veliki broj kandidata, kako mlađih, tako i starijih su
                             prošli
@@ -146,12 +164,12 @@
                             otvoreni smo za kritike i drago bi nam bilo da mijenjamo nešto za dobro i Vas i našeg tima.
                         </p>
                     </div>
-                    <div class="wow fadeInUp" data-wow-delay="1s">
-                        <img class="w-[400px] h-[400px] rounded-[50%] " src="images/zeleni-oNama.jpg" alt="">
+                    <div class="small:mx-auto wow fadeInUp lg:mt-[55px] small:mt-[55px]" data-wow-delay="1s">
+                        <img class="w-[400px] h-[400px] lg:w-[300px] lg:h-[300px] rounded-[50%] " src="images/zeleni-oNama.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="flex flex-row pt-[75px]">
+                <div class="small:justify-evenly flex flex-row small:flex-wrap pt-[75px]">
                     <div class="shadow-xl w-[300px] bg-[#2E2E2E] text-[#03A04F] p-[20px]">
                         <span>
                             <i class="text-[40px] fas fa-user-clock"></i>
@@ -164,7 +182,7 @@
                             instruktora.
                         </p>
                     </div>
-                    <div class="shadow-xl w-[300px] bg-[#2E2E2E] text-[#03A04F] p-[20px] ml-[20px]">
+                    <div class="bigTablet:ml-0 bigTablet:mt-[20px] shadow-xl w-[300px] bg-[#2E2E2E] text-[#03A04F] p-[20px] ml-[20px]">
                         <span>
                             <i class="text-[40px] fas fa-car-side"></i>
                         </span>
@@ -175,7 +193,7 @@
                             U širokoj lepezi motornih vozila naše auto škole nalaze se: Mini One, Peugeot 208, Citroen C3 i Renault Clio 4
                         </p>
                     </div>
-                    <div class="shadow-2xl w-[300px] bg-[#2E2E2E] text-[#03A04F] p-[20px] ml-[20px]">
+                    <div class="small:ml-0 small:mt-[20px] shadow-2xl w-[300px] bg-[#2E2E2E] text-[#03A04F] p-[20px] ml-[20px]">
                         <span>
                             <i class="text-[40px] fas fa-user-shield"></i>
                         </span>
@@ -187,7 +205,7 @@
                             bezbjednosti svih učesnika u saobraćaju.
                         </p>
                     </div>
-                    <div class="shadow-xl w-[300px] bg-[#03A04F] text-[#2E2E2E] p-[20px] ml-[20px]">
+                    <div class="bigTablet:ml-0 small:mt-[20px] shadow-xl w-[300px] bg-[#03A04F] text-[#2E2E2E] p-[20px] ml-[20px]">
                         <span>
                             <i class="text-[40px] fas fa-piggy-bank"></i>
                         </span>
@@ -205,12 +223,12 @@
         </section>
 
         <section id="nas-tim" class="w-full bg-fixed bg-center bg-cover bg-nastim">
-            <div class="mx-auto w-[1140px] pt-[100px]">
+            <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] pt-[100px]">
                 <div class="wow slideInLeft" data-wow-delay="0.2s">
-                    <h2 class=" text-[60px] font-bold pb-[20px] font-robotoCondensed">
+                    <h2 class="small:text-center text-[60px] font-bold pb-[20px] font-robotoCondensed">
                         NAS TIM
                     </h2>
-                    <p class="pb-[60px] text-[16px] text-[#666666]">
+                    <p class="small:text-center pb-[60px] text-[16px] text-[#666666]">
                         Kolektiv "Zelenog signala" čini 8 zaposlenih koji funkcionišu kao jedna homogena cjelina. Osim
                         znanja, iskustva i profesionalizma naših zaposlenih, karakteriše ih ogromna ljubav prema poslu
                         kojim se bave, strpljivost i volja za rad sa kandidatima. Ne smijemo zaboraviti da ovakav uspjeh
@@ -220,7 +238,7 @@
                 </div>
                 <div class="pb-[250px] flex flex-row flex-wrap justify-between">
 
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown"
                         data-wow-delay="0.4s">
                         <div
                             class="transition duration-1000 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
@@ -251,7 +269,7 @@
                         </div>
                     </div>
 
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] tablet:mt-[162px] wow fadeInDown"
                         data-wow-delay="1s">
                         <div
                             class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
@@ -282,7 +300,7 @@
                         </div>
                     </div>
 
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[30px] lg:mt-[162px] small:mt-[162px] wow fadeInDown"
                         data-wow-delay="1.6s">
                         <div
                             class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
@@ -313,7 +331,7 @@
                         </div>
                     </div>
 
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px]  wow fadeInDown"
                         data-wow-delay="0.4s">
                         <div
                             class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
@@ -343,7 +361,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1] bg-white relative milan-card mt-[162px] wow fadeInDown"
                         data-wow-delay="1s">
                         <div
                             class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:brightness-100">
@@ -373,7 +391,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="group cursor-pointer border-[10px] border-[#E1E1E1]  bg-white relative milan-card mt-[162px] wow fadeInDown"
+                    <div class="small:mx-auto group cursor-pointer border-[10px] border-[#E1E1E1]  bg-white relative milan-card mt-[162px] wow fadeInDown"
                         data-wow-delay="1.6s">
                         <div
                             class="transition duration-200 ease-in-out w-[300px] h-[356px] filter brightness-75 group-hover:filter-none">
@@ -411,13 +429,13 @@
             <div class="mx-auto owl-carousel owl-theme">
                 <div class="h-[700px] relative bg-center bg-cover bg-results item">
                     <div class="h-full bg-results-layer">
-                        <div class="mx-auto w-[1140px] py-[100px]">
+                        <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
                             <div class="text-right wow fadeInUp" data-wow-delay="0.5s">
                                 <h3
-                                    class="pt-[30px] pb-[30px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
+                                    class="pt-[30px] pb-[30px] text-[60px] small:text-[44px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
                                     Zeljko Dumnic
                                 </h3>
-                                <p class=" text-[32px] text-white">
+                                <p class=" text-[32px] small:text-[24px] text-white">
                                     CITROËN C4
                                 </p>
                             </div>
@@ -427,13 +445,13 @@
                 </div>
                 <div class="h-[700px] relative bg-center bg-cover bg-results item">
                     <div class="h-full bg-results-layer">
-                        <div class="mx-auto w-[1140px] py-[100px]">
+                        <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
                             <div class="text-right">
                                 <h3
-                                    class="pt-[30px] pb-[30px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
+                                    class="pt-[30px] pb-[30px] small:text-[44px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
                                     Milan Vujicic
                                 </h3>
-                                <p class=" text-[32px] text-white">
+                                <p class=" text-[32px] small:text-[24px] text-white">
                                     Renault Megane
                                 </p>
                             </div>
@@ -443,13 +461,13 @@
                 </div>
                 <div class="h-[700px] relative bg-center bg-cover bg-results item">
                     <div class="h-full bg-results-layer">
-                        <div class="mx-auto w-[1140px] py-[100px]">
+                        <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
                             <div class="text-right">
                                 <h3
-                                    class="pt-[30px] pb-[30px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
+                                    class="pt-[30px] pb-[30px] small:text-[44px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
                                     Nedjo Durutovic
                                 </h3>
-                                <p class=" text-[32px] text-white">
+                                <p class=" text-[32px] small:text-[24px] text-white">
                                     Golf V
                                 </p>
                             </div>
@@ -459,13 +477,13 @@
                 </div>
                 <div class="h-[700px] relative bg-center bg-cover bg-results item">
                     <div class="h-full bg-results-layer">
-                        <div class="mx-auto w-[1140px] py-[100px]">
+                        <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
                             <div class="text-right">
                                 <h3
-                                    class="pt-[30px] pb-[30px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
+                                    class="pt-[30px] pb-[30px] small:text-[44px] text-[60px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
                                     Marko Perovic
                                 </h3>
-                                <p class=" text-[32px] text-white">
+                                <p class=" text-[32px] small:text-[24px] text-white">
                                     Golf VII
                                 </p>
                             </div>
@@ -477,26 +495,26 @@
 
         <section id="obuka">
             <section id="vozacka" class="w-full bg-fixed bg-white bg-center bg-contain bg-vozacka">
-                <div class="mx-auto w-[1140px] pt-[100px]">
+                <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] pt-[100px]">
                     <div class="pb-[90px] font-robotoCondensed wow fadeInDown" data-wow-delay="0.2s">
-                        <h2 class=" text-[60px] font-bold  text-[#03A04F]">
+                        <h2 class=" text-[60px] small:text-[44px] small:leading-[40px] font-bold  text-[#03A04F]">
                             PUT DO VOZACKE?
                         </h2>
-                        <p class="text-[44px] font-bold text-[#666666] leading-[54px]">
+                        <p class="small:pt-[15px] text-[44px] small:leading-[28px] small:text-[28px] font-bold text-[#666666] leading-[54px]">
                             Kako izgleda obuka za B? Provozaj se sa nama :)
                         </p>
                     </div>
-                    <div class="flex flex-row justify-between">
-                        <ul class="pb-[100px] wow slideInLeft" data-wow-delay="0.5s">
+                    <div class="flex flex-row lg:flex-wrap small:flex-wrap">
+                        <ul class="xl:pb-[100px] wow slideInLeft" data-wow-delay="0.5s">
                             <li class="relative pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="main_road">
                                         <div class="inside">
                                             <div class="yellow">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pl-[35px] w-[500px]">
+                                    <div class="pl-[35px]">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             1. Prvo krenes glavnim putem i upises se! :)
@@ -522,13 +540,13 @@
                                 </div>
                             </li>
                             <li class="relative mt-[10px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="sign-flat">
                                         <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
                                             H
                                         </p>
                                     </div>
-                                    <div class="pl-[35px] w-[500px]">
+                                    <div class="pl-[35px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             2. Ljekarsko uverenje i prva pomoć
@@ -545,13 +563,13 @@
                                 </div>
                             </li>
                             <li class="relative mt-[10px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="sign-red">
                                         <div class="normal">
                                             <span>50</span>
                                         </div>
                                     </div>
-                                    <div class="pl-[32px] w-[500px]">
+                                    <div class="pl-[32px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             3. Uspori! Prvo moras da naucis teoriju. :)
@@ -573,13 +591,13 @@
                                 </div>
                             </li>
                             <li class="relative mt-[10px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="stopWrap">
                                         <div class="stop">
                                             <p>STOP</p>
                                         </div>
                                     </div>
-                                    <div class="pl-[32px] w-[500px]">
+                                    <div class="pl-[32px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             4. Zaustavi se, primjeni steceno znanje i polozi ispit! :)
@@ -591,17 +609,20 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="connector xl:hidden">
+    
+                                </div>
                             </li>
                         </ul>
-                        <ul class="pb-[100px] pl-[20px] wow slideInRight" data-wow-delay="0.5s">
+                        <ul class="pb-[100px] xl:pl-[20px] wow slideInRight" data-wow-delay="0.5s">
                             <li class="relative pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="sign-red">
                                         <div class="normal">
                                             <i class="fa fa-car-alt"></i>
                                         </div>
                                     </div>
-                                    <div class="pl-[35px] w-[500px]">
+                                    <div class="pl-[35px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             5. E sad je vrijeme da vozimo!
@@ -621,14 +642,14 @@
                                 </div>
                             </li>
                             <li class="relative mt-[10px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="sign-red">
                                         <div class="blue">
                                             <div class="big-red">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pl-[35px] w-[500px]">
+                                    <div class="pl-[35px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             6. Sad nema stajanja! Ma, polazes ti to :)
@@ -647,13 +668,13 @@
                                 </div>
                             </li>
                             <li class="relative mt-[10px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <!-- <div class="sign-flat">
                                         <p class="text-white text-[45px] font-bold mt-[-10px] ml-[1px]">
                                             P
                                         </p>
                                     </div> -->
-                                    <div class="z-20 w-[45px] bg-[#323E4E] h-[95px] py-[5px] rounded-[50px]">
+                                    <div class="z-20 min-w-[45px] bg-[#323E4E] h-[95px] py-[5px] rounded-[50px] ">
                                         <div class="mx-auto rounded-[50%] bg-[#C0392B] w-[25px] h-[25px] ">
     
                                         </div>
@@ -664,7 +685,7 @@
     
                                         </div>
                                     </div>
-                                    <div class="pl-[32px] w-[500px]">
+                                    <div class="pl-[38px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             7. Dok cekas <span class="text-[#03A04F]">zeleni signal</span>, skokni po
@@ -692,7 +713,7 @@
                                 </div>
                             </li>
                             <li class="relative mt-[20px] pb-[20px]">
-                                <div class="flex flex-row">
+                                <div class="flex flex-row justify-start">
                                     <div class="main_road">
                                         <div class="inside">
                                             <div class="yellow">
@@ -702,7 +723,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="pl-[32px] w-[500px]">
+                                    <div class="pl-[32px] flex-shrink">
                                         <h3
                                             class="text-[20px] font-bold text-[#666666] leading-[30px] font-robotoCondensed">
                                             8. Kraj puta. Srecna vozacka!
@@ -722,37 +743,37 @@
     
             <section id="results" class="bg-center bg-cover results-counter bg-results">
                 <div class="bg-results-layer">
-                    <div class="mx-auto w-[1140px]">
-                        <div class="flex flex-row justify-between py-[200px]">
+                    <div class="mx-auto max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px]">
+                        <div class="grid grid-cols-4 bigTablet:grid-cols-2 py-[200px]">
                             <div class="flex flex-col justify-between">
                                 <i class="text-[50px] text-[#03A04F] text-center fas fa-users"></i>
                                 <p
-                                    class="count pt-[30px] text-[32px] text-white font-bold font-robotoCondensed text-center">
+                                    class="count pt-[30px] bigTablet:pt-[20px] text-[32px] text-white font-bold font-robotoCondensed text-center">
                                     5</p>
                                 <span class="pt-[10px] text-white font-bold text-center">INSTRUKTORA</span>
                             </div>
                             <div class="flex flex-col justify-between">
                                 <i class="text-[50px] text-[#03A04F] text-center fas fa-car"></i>
                                 <div
-                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] bigTablet:pt-[20px] mx-auto">
                                     <p class="count">97</p>
                                     <p class="">%</p>
                                 </div>
                                 <span class="pt-[10px] text-white font-bold text-center">PROLAZNOST</span>
                             </div>
-                            <div class="flex flex-col justify-between">
+                            <div class="flex flex-col justify-between bigTablet:pt-[50px]">
                                 <i class="text-[50px] text-[#03A04F] text-center fas fa-user"></i>
                                 <div
-                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] bigTablet:pt-[20px] mx-auto">
                                     <p class="count">40000</p>
                                     <p class="">+</p>
                                 </div>
                                 <span class="pt-[10px] text-white font-bold text-center">KANDIDATA</span>
                             </div>
-                            <div class="flex flex-col justify-between">
+                            <div class="flex flex-col justify-between bigTablet:pt-[50px]">
                                 <i class="text-[50px] text-[#03A04F] text-center fas fa-coffee"></i>
                                 <div
-                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] mx-auto">
+                                    class="flex flex-row text-[32px] text-white font-bold font-robotoCondensed pt-[30px] bigTablet:pt-[20px] mx-auto">
                                     <p class="count">5000</p>
                                     <p class="">+</p>
                                 </div>
@@ -765,12 +786,12 @@
         </section>
 
         <section id="cjenovnik" class="w-full bg-[#EEEEEE]">
-            <div class="mx-auto w-[1140px] py-[100px]">
+            <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
                 <div class="wow slideInLeft" data-wow-delay="0.2s">
-                    <h2 class=" text-[60px] font-bold pb-[20px] font-robotoCondensed">
+                    <h2 class="small:text-center text-[60px] font-bold pb-[20px] font-robotoCondensed">
                         CJENOVNIK
                     </h2>
-                    <p class="pb-[60px] text-[16px] text-[#666666]">
+                    <p class="small:text-center pb-[40px] text-[16px] text-[#666666]">
                         Auto škola "Zeleni Signal" vrši obuku vozača za A, B, C, D i E kategorije. U prostorijama naše
                         auto škole
                         imamo učionicu u kojoj se obavlja teorijski dio nastave. Literatura za polaganje teorijskog
@@ -779,8 +800,8 @@
                         Ukoliko plaćate gotovinom prvi izlazak na polaganje testova i polaganje vožnje je GRATIS.
                     </p>
                 </div>
-                <div class="flex flex-row justify-between">
-                    <div class="motor-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="0.6s">
+                <div class="flex flex-row flex-wrap justify-between lg:justify-evenly small:justify-evenly">
+                    <div class="mt-[20px] motor-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="0.6s">
                         <div class="overflow-hidden">
                             <p
                                 class="motor-animation text-center text-[40px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
@@ -826,7 +847,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="car-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="1s">
+                    <div class="mt-[20px] car-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="1s">
                         <div class="">
                             <p
                                 class="car-animation text-center text-[40px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
@@ -872,7 +893,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="truck-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="1.4s">
+                    <div class="mt-[20px] truck-card pt-[50px] pb-[20px] w-[350px] bg-white shadow-xl wow fadeInDown" data-wow-delay="1.4s">
                         <div class="overflow-hidden">
                             <p
                                 class="text-center text-[40px] font-bold text-[#03A04F] leading-[30px] font-robotoCondensed">
@@ -927,16 +948,16 @@
             <div class="bg-results-layer">
                 <div class="mx-auto w-full text-center pt-[100px]">
                     <div class="wow slideInLeft" data-wow-delay="0.2s">
-                        <h2 class=" text-[60px] text-[#03A04F] font-bold font-robotoCondensed">
+                        <h2 class=" text-[60px] small:text-[44px] text-[#03A04F] font-bold font-robotoCondensed">
                             A STA VI KAZETE?
                         </h2>
-                        <p class="pb-[60px] text-[16px] text-white">
+                        <p class="small:mx-auto pb-[60px] text-[16px] small:w-[200px] text-white">
                             Izdvojili smo nekoliko najzanimljivijih bla bla bla..
                         </p>
                     </div>
                     <div class="pb-[130px] mx-auto owl-carousel slider2 owl-theme wow fadeInUp" data-wow-delay="1s">
     
-                        <div class="w-[820px] mx-auto relative item">
+                        <div class=" max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] mx-auto relative item">
                             <div class="h-full">
                                 <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row wow slideInLeft"
                                     data-wow-delay="1s">
@@ -944,12 +965,12 @@
                                     <img class="ml-[10px]" src="images/apostrof.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <p class="font-merienda py-[30px] px-[65px] text-[21px] text-white leading-[45px]">
+                                    <p class="font-merienda py-[30px] px-[65px] small:text-[14px] small:leading-[28px] text-[21px] text-white leading-[45px]">
                                         Lorem ipsum dolor sit amet consectetur mhm elit. Est eos eum, vero
                                         exercitationem, harum error provident facere veniam at minima nemo, cupiditate
                                         libero velit quibusdam deserunt. Temporibus impedit consequuntur labore!
                                     </p>
-                                    <h4 class=" text-[24px] text-white">
+                                    <h4 class=" text-[24px] small:text-[18px] text-white">
                                         John Doe
                                     </h4>
                                     <span>
@@ -962,19 +983,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[820px] mx-auto relative item">
+                        <div class=" max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] mx-auto relative item">
                             <div class="h-full">
-                                <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row">
+                                <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row wow slideInLeft"
+                                    data-wow-delay="1s">
                                     <img class="" src="images/apostrof.png" alt="">
                                     <img class="ml-[10px]" src="images/apostrof.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <p class="py-[30px] px-[65px] text-[32px] text-white leading-[45px]">
+                                    <p class="font-merienda py-[30px] px-[65px] small:text-[14px] small:leading-[28px] text-[21px] text-white leading-[45px]">
                                         Lorem ipsum dolor sit amet consectetur mhm elit. Est eos eum, vero
                                         exercitationem, harum error provident facere veniam at minima nemo, cupiditate
                                         libero velit quibusdam deserunt. Temporibus impedit consequuntur labore!
                                     </p>
-                                    <h4 class=" text-[24px] text-white">
+                                    <h4 class=" text-[24px] small:text-[18px] text-white">
                                         John Doe
                                     </h4>
                                     <span>
@@ -987,19 +1009,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[820px] mx-auto relative item">
+                        <div class=" max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] mx-auto relative item">
                             <div class="h-full">
-                                <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row">
+                                <div class="z-[-1] absolute w-[62px] top-[26px] flex flex-row wow slideInLeft"
+                                    data-wow-delay="1s">
                                     <img class="" src="images/apostrof.png" alt="">
                                     <img class="ml-[10px]" src="images/apostrof.png" alt="">
                                 </div>
                                 <div class="text-center">
-                                    <p class="py-[30px] px-[65px] text-[32px] text-white leading-[45px]">
+                                    <p class="font-merienda py-[30px] px-[65px] small:text-[14px] small:leading-[28px] text-[21px] text-white leading-[45px]">
                                         Lorem ipsum dolor sit amet consectetur mhm elit. Est eos eum, vero
                                         exercitationem, harum error provident facere veniam at minima nemo, cupiditate
                                         libero velit quibusdam deserunt. Temporibus impedit consequuntur labore!
                                     </p>
-                                    <h4 class=" text-[24px] text-white">
+                                    <h4 class=" text-[24px] small:text-[18px] text-white">
                                         John Doe
                                     </h4>
                                     <span>
@@ -1019,15 +1042,15 @@
         </section>
 
         <section id="kontakt" class="w-full">
-            <div class="mx-auto w-[1140px] py-[100px]">
+            <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[100px]">
 
-                <div class="flex flex-row justify-between">
+                <div class="flex flex-row flex-wrap justify-between">
                     <form action="https://formspree.io/f/xeqvgwad" method="POST" class="flex flex-col w-[1000px]">
                         <div>
-                            <h2 class=" text-[60px] font-bold  font-robotoCondensed">
+                            <h2 class="text-[60px] small:text-[44px] small:leading-[40px] font-bold  font-robotoCondensed">
                                 KONTAKTIRAJ NAS
                             </h2>
-                            <p class="pb-[40px] text-[16px] text-[#666666]">
+                            <p class="small:pt-[15px] pb-[40px] text-[16px] text-[#666666]">
                                 Pošalji nam poruku ili email i naš operater će te pozvati vrlo brzo.
                             </p>
                         </div>
@@ -1055,7 +1078,7 @@
                             </button>
                         </div>
                     </form>
-                    <div class="pl-[50px] mapouter pt-[50px]">
+                    <div class="pl-[50px] small:pl-0 mapouter pt-[50px]">
                         <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=Zeleni%20Signal,%20Niksic&t=&z=17&ie=UTF8&iwloc=&output=embed"
                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
@@ -1079,7 +1102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-[100px] py-[20px] px-[40px] bg-[#2E2E2E] flex flex-row justify-between text-center rounded-lg">
+                <div class="mt-[100px] py-[20px] px-[40px] bg-[#2E2E2E] grid grid-cols-5 small:grid-cols-3 text-center rounded-lg">
                     <div class="text-[#666666]">
                         <div>
                             <i class="text-[32px] text-[#03A04F] fas fa-phone-alt"></i>
@@ -1128,7 +1151,7 @@
     </main>
 
     <footer class="bg-[#2E2E2E]">
-        <div class="mx-auto w-[1140px] py-[40px]">
+        <div class="mx-auto  max-w-[1140px] lg:max-w-[970px] md:max-w-[750px] sm:max-w-[767px] px-[20px] py-[40px]">
             <p class="text-[18px] font-bold font-robotoCondensed text-[#03A04F]">PUNIM GASOM DO VOZACKE!</p>
             <p class="pt-[10px] text-[14px] text-[#666666]">Copyright © 2021. Auto škola Zeleni Signal | Niksic. All
                 Rights Reserved.</p>

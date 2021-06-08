@@ -459,6 +459,8 @@ h1 span:hover {
 
 .bg-nameCard {
     background: rgb(25, 25, 25, 0.90);
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .milan-card {
@@ -574,7 +576,7 @@ h1 span:hover {
 /*---- main road sign - rotated square ----*/
 .main_road {
     float: left;
-    width: 45px;
+    min-width: 45px;
     height: 45px;
     display: block;
     background: #fff;
@@ -644,7 +646,7 @@ h1 span:hover {
     display: block;
     font-family: Arial;
     text-align: center;
-    width: 45px;
+    min-width: 45px;
     height: 45px;
     border-radius: 8px;
     background: rgba(31, 58, 147, 1);
@@ -655,7 +657,7 @@ h1 span:hover {
 .sign-red {
     margin-left: -4px;
     display: block;
-    width: 52px;
+    min-width: 52px;
     height: 52px;
     border: 3px solid #fff;
     border-radius: 50%;
@@ -711,7 +713,7 @@ i.fa-car-alt {
 
 /*---- octagon shape for stop sign ----*/
 .stopWrap {
-    width: 45px;
+    min-width: 45px;
     height: 45px;
     position: relative;
     overflow: hidden;
@@ -998,6 +1000,72 @@ canvas {
     left: 0;
     width: 100%;
     transition: all ease 0.5s;
+}
+
+.hamburger-btn-close::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: #03A04F;
+    -webkit-animation: scaleCircle 0.5s forwards;
+            animation: scaleCircle 0.5s forwards;
+    transition: 0.5s transform;
+    transition: 0.5s transform;
+}
+
+@-webkit-keyframes scaleCircle {
+    from {
+        display: none;
+        transform: translate(-50%,-50%) scale(0);
+    }
+    to {
+        display: block;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+@keyframes scaleCircle {
+    from {
+        display: none;
+        transform: translate(-50%,-50%) scale(0);
+    }
+    to {
+        display: block;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
+.hamburger-bar {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: 0.5s -webkit-all;
+    transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+.hamburger-bar2 {
+    visibility: inherit;
+    opacity: 1;
+
+}
+
+.bar1 {
+    transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 5);
+}
+
+.bar2 {
+    visibility: hidden;
+    opacity: 0;
+    transform: matrix(1, 0, 0, 1, -30, 0);
+
+}
+
+.bar3 {
+    transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, -1, -8);
 }
 
 /* End Fonts */
