@@ -1781,14 +1781,11 @@ body {
 .h-screen{
     height: 100vh;
 }
-.w-\[1040px\]{
-    width: 1040px;
+.w-\[87px\]{
+    width: 87px;
 }
 .w-\[1140px\]{
     width: 1140px;
-}
-.w-\[87px\]{
-    width: 87px;
 }
 .w-full{
     width: 100%;
@@ -1825,6 +1822,15 @@ body {
 }
 .w-\[1000px\]{
     width: 1000px;
+}
+.max-w-\[1040px\]{
+    max-width: 1040px;
+}
+.max-w-\[1140px\]{
+    max-width: 1140px;
+}
+.max-w-full{
+    max-width: 100%;
 }
 .max-w-\[600px\]{
     max-width: 600px;
@@ -2278,4 +2284,22 @@ body {
 }
 .group:hover .group-hover\:brightness-100{
     --tw-brightness: brightness(1);
+}
+@media (max-width: 767px){
+
+    .sm\:max-w-\[767px\]{
+        max-width: 767px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+
+    .md\:max-w-\[750px\]{
+        max-width: 750px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .lg\:max-w-\[970px\]{
+        max-width: 970px;
+    }
 }
